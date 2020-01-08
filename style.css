@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#Airplane {
+  animation: Airplane 12s ease-out;
+  transform-origin: right;
+  transform-box: fill-box;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Airplane {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1300px);
+  }
+}
+
+#Sun {
+  animation: Sun 4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Sun {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(80px);
+  }
+}
